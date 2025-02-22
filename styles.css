@@ -4,28 +4,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vw;
-
+    font-size: 14px;
+    font-family: "Inter";
+    height: 100vh;
+}
+h1 {
+    font-weight: 700;
+}
+h3{
+    font-weight: 600;
 }
 .container {
     text-align: center;
     color: white;
     display: block;
     border: 1px solid hsl(0, 0%, 12%);
-    width: 30vw;
     padding: 20px 0px;
     background-color: hsl(0, 0%, 12%);
     border-radius: 10px;
-    font-size: small;
+    width: 23%;
 }
-.description {
+p {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
     color: white;
     opacity: 0.95;
-    font-size: 16px;
     font-weight: 400;
+
 }
 .app-tree {
     display: flex;
@@ -35,23 +41,23 @@ body {
     justify-items: center;
     padding: 0px 20px;
 }
-.app {
+a  {
     color: white;
     background-color: hsl(0, 0%, 20%);
     border: 1px solid hsl(0, 0%, 20%);
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 5px;
     padding: 10px;
     font-size: 14px;
     font-weight: 600;
-
+    cursor: pointer;
+    overflow: hidden;
 }
 img {
     border-radius: 50%;
     object-fit: cover;
-    width: auto;
-    height: auto;
-    max-width: 90%;
+    max-width: 25%;
+    max-height: 25%;
 }
 .location {
     color: hsl(75, 94%, 57%);
@@ -59,4 +65,22 @@ img {
 }
 .name {
     font-weight: 700;
+}
+a:hover {
+    background-color: hsl(75, 94%, 57%);
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        min-width: 90%; 
+    }
+    body {
+        padding: 15% 2%;
+    }
 }
